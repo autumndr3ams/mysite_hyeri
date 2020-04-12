@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    height: 50px;
+    background-color: #333;
+    padding: 1px 5px;
+}
+
+h1{
+    font-size: 20px;
+    font-family: "나눔고딕";
+    color: white;
+}
+
+main{
+    background-color: #f8f8f8;
+    margin: 0 auto;
+}
+
+#container{
+    height: 410px;
+    width: 60%;
+    background-color: rgb(136, 70, 70);
+    
+}
+
+.section{
+    position: relative;
+    display: block;
+}
