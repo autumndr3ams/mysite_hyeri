@@ -1,0 +1,21 @@
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'mydiary/css/style_edit.css' %}" /> 
+    <meta charset="utf-8">
+    <title>EDIT</title>
+</head>
+
+<body>
+    <header>
+        <h1>수정하기</h1>
+    </header>
+    <main>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button id="save" type="submit" class="save btn btn-default" hover>SAVE</button>
+        </form>
+    </main>
+</body>
+
+    
