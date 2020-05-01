@@ -13,16 +13,17 @@
     </header>
     <main>
         <div id="top">
-           <a class="btn btn-outline-warning btn-phone" style= "text-decoration: none; font-family: 'MapoPeacefull'; padding: 10px; font-size: 18; border: 2px solid black; line-height: 3; " href="{% url 'new' %}">작성하기</a>
+           <a class="btn btn-outline-warning btn-phone" style= "text-decoration: none; font-family: 'MapoPeacefull'; padding: 13px; font-size: 20; border: 2px solid black; line-height: 5; " href="{% url 'new' %}">작성하기</a>
         </div>
         <div id="container">
             <h2>최근 글</h2>
-            <section>
+
                 {% for post in posts_list %}
+                <section>
                     <a href="{% url 'detail' pk=post.pk %}">{{ post.title }}</a><br>
-                    <hr>
+                </section>
                 {% endfor %} 
-            </section>
+
         </div>  
     </main>
 </body>

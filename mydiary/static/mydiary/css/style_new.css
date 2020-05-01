@@ -19,14 +19,14 @@
 @font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 header{
-    height: 50px;
+    height: 80px;
     background-color: #333;
     padding: 1px 20px;
-
+    line-height: 20px;
 }
 
 h1{
-    font-size: 20px;
+    font-size: 40px;
     font-family: "MapoPeacefull";
     color: white;
 }

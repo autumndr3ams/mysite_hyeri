@@ -22,13 +22,14 @@
     font-style: normal; }
 
 header{
-    height: 50px;
+    height: 80px;
     background-color: #333;
     padding: 1px 20px;
+    line-height: 20px;
 }
 
 h1{
-    font-size: 20px;
+    font-size: 40px;
     font-family: "MapoPeacefull";
     color: white;
 }
