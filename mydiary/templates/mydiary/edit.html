@@ -1,12 +1,7 @@
+{% extends 'mydiary/base.html' %}
+{% block content %}
 {% load static %}
 
-<head>
-    <link rel="stylesheet" type="text/css" href="{% static 'mydiary/css/style_edit.css' %}" /> 
-    <meta charset="utf-8">
-    <title>EDIT</title>
-</head>
-
-<body>
     <header>
         <h1>수정하기</h1>
     </header>
@@ -16,6 +11,6 @@
             <button id="save" type="submit" class="save btn btn-default" hover>SAVE</button>
         </form>
     </main>
-</body>
 
+{% endblock %}
     

@@ -21,53 +21,41 @@
     font-weight: lighter; 
     font-style: normal; }
 
-header{
-    height: 80px;
-    background-color: #333;
-    padding: 1px 20px;
-    line-height: 20px;
+h1{
+    font-family: "RecipeKorea";
 }
 
-h1{
-    font-size: 40px;
+h2{
+    font-family: "RecipeKorea";
+    color: black;
+}
+
+.card-text{
     font-family: "MapoPeacefull";
-    color: white;
+}
+
+nav{
+    font-family: "RecipeKorea";
 }
 
 main{
     height: auto;
     min-height: 600px;
-    background-color: #f8f8f8;
-    margin: 0 auto;
+    margin: 30;
 }
 
-#container{ 
+#homecontainer{ 
     text-align: center;
-    height: 500px;
     width: 60%;
-    /* background-color: white; */
     margin: 20px auto;
     font-family: "RecipeKorea";
 }
 
-.container{
-    padding-left: 15px;
-    padding-right:15px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.posts{
+    font-family: "RecipeKorea";
+
 }
 
-section{
-    border: 4px solid rgb(164, 197, 247);
-    font-family: "Recipekorea";
-    border-radius: 5px;
-    padding: 20px;
-    margin: 5px;
-    font-size: 18px;
-}
-
-
-p{
-    font-weight: 10 !important;
-    
+.posts p{
+    font-family: "MapoPeacefull"
 }
