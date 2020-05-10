@@ -1,8 +1,38 @@
-<h1>로그인</h1>
-<form method = "POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button><br><br>
-</form>
-<b>새로 계정을 만드시겠습니까?</b><br><br>
-<a href="{% url 'register' %}">회원가입</a>
+{% load static %}
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>로그인</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'mydiary/css/style_login.css' %}">
+</head>
+
+<body>
+    <h1 href="{% url 'home' %}">당신의 관극</h1>
+    <main>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address: </label>
+                <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password: </label>
+                <input type="password" class="form-control form-control-lg" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-warning">Login</button>
+        </form>
+        <b>새로 계정을 만드시겠습니까?</b><br><br>
+        <a class="btn btn-warning" href="{% url 'register' %}" role="button">회원가입</a>
+    </main>
+</body>
+
+</html>

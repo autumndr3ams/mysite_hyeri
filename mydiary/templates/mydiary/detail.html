@@ -27,14 +27,13 @@
         <a href = "{% url 'delete_comment' pk=post.pk comment_pk=comment.pk %}">댓글 삭제</a>
         {% endfor %}
         
+        
     </main>
-    <footer>
-        <a class="btn btn-outline-warning btn-phone" style= "text-decoration: none; font-family: 'MapoPeacefull'; padding: 10px; font-size: 18; border: 2px solid black; line-height: 3; " href="{% url 'edit' index=post.pk %}">수정하기</a>
-        <a class="btn btn-outline-warning btn-phone" style= "text-decoration: none; font-family: 'MapoPeacefull'; padding: 10px; font-size: 18; border: 2px solid black; line-height: 3; " href="{% url 'delete' pk=post.pk %}">삭제하기</a>
-    
-        <!-- <a href="{% url 'edit' index=post.pk %}">수정하기</a><br> -->
-        <!-- <a href="{% url 'delete' pk=post.pk %}">삭제하기</a> -->
-    </footer>
     
 {% endblock %}
 
+    <footer>
+        <a class="btn btn-outline-warning" style= "text-decoration: none; font-family: 'MapoPeacefull'; padding: 3 5; font-size: 18; border: 2px solid black; line-height: 3; " href="{% url 'edit' index=post.pk %}">수정하기</a>
+        <a class="btn btn-outline-warning" style= "text-decoration: none; font-family: 'MapoPeacefull'; padding: 3 5; font-size: 18; border: 2px solid black; line-height: 3; " href="{% url 'delete' pk=post.pk %}">삭제하기</a>
+
+    </footer>

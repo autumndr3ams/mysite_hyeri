@@ -16,22 +16,19 @@
     font-style: normal; 
 }
 
-header{
-    height: 80px;
-    background-color: #333;
-    padding: 1px 20px;
-    line-height: 20px;
+h1{
+    font-family: "RecipeKorea";
+    text-align: center;
+    line-height: 3;
 }
 
 body{
-    font-family: "MapoPeacefull";
+    background-color: #f8f8f8;
 }
 
-h1{
-    font-size: 40px; 
-    color: white;
+main{
+    width: 400px;
+    margin: 50 auto;
+
 }
 
-footer{
-    margin-top: 20px;
-}

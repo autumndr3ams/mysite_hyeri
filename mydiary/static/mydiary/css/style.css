@@ -24,10 +24,19 @@
 h1{
     font-family: "RecipeKorea";
 }
-
+    
 h2{
     font-family: "RecipeKorea";
     color: black;
+}
+
+form{
+    width: 600px;
+    align-items: center;
+}
+
+b{
+    font-family: "RecipeKorea";
 }
 
 .card-text{
@@ -58,4 +67,9 @@ main{
 
 .posts p{
     font-family: "MapoPeacefull"
+}
+
+.form-group{
+    padding: 10;
+    
 }
