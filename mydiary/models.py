@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from django.utils import timezone
-from django.db import models    
+from django.db import models  
+  
 
 # Create your models here.
 class Content(models.Model):
@@ -9,6 +10,9 @@ class Content(models.Model):
     
     pub_date = models.DateTimeField(default=timezone.now)
     body = models.TextField(default='')
+    
+    image = models.ImageField(upload_to = 'images/', blank = True)
+    file = models.FileField(upload_to = 'documents/%Y.%m', blank = True)
     
 class Comment(models.Model):
     objects = models.Manager()

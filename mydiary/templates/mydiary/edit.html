@@ -6,7 +6,7 @@
         <h1>수정하기</h1>
     </header>
     <main>
-        <form method="POST" class="post-form">{% csrf_token %}
+        <form method="POST" class="post-form" enctype='multipart/form-data'>{% csrf_token %}
             {{ form.as_p }}
             <button id="save" type="submit" class="save btn btn-default" hover>SAVE</button>
         </form>

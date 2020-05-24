@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',   
+    'django.contrib.staticfiles', 
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 LOGIN_REDIRECT_URL = '/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+FILE_ROOT = os.path.join(BASE_DIR, 'file')
+FILE_URL = '/file/'
+
