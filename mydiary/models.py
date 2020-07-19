@@ -7,7 +7,7 @@ from django.db import models
 class Content(models.Model):
     objects = models.Manager()
     title = models.CharField(max_length=200)
-    
+    actor = models.CharField(max_length=200, null=True, blank=True)
     pub_date = models.DateTimeField(default=timezone.now)
     body = models.TextField(default='')
     
